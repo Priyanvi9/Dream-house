@@ -177,7 +177,7 @@
         <button type="submit">Submit</button>
                     
 
-                    <i id="plane" class="fa-solid fa-paper-plane"></i>
+<!--                     <i id="plane" class="fa-solid fa-paper-plane"></i> -->
                 </div>
             </div>
         </section>
@@ -200,9 +200,9 @@
          <script src="script.js" defer data-deferred="1">
                document.getElementById('emailInput').addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent the form from submitting
-            const email = document.getElementById('email').value;
+            const email = document.getElementById('emailInput').value;
             alert(`Thank you for submitting your email: ${email}`);
-            document.getElementById('email').value = ''; // Clear the input field
+            document.getElementById('emailInput').value = ''; // Clear the input field
         });
          </script>
         
