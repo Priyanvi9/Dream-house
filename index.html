@@ -168,7 +168,9 @@
                     <h1>Stay tuned and get the latest updates</h1>
                 </div>
                 <div class="contact-right">
-                    <input type="email" id="priya" placeholder="Enter your e-mail address">
+                    <input type="email" id="emailInput" placeholder="Enter your email" required>
+                    
+
                     <i class="fa-solid fa-paper-plane"></i>
                 </div>
             </div>
@@ -192,8 +194,17 @@
 
 
      <script src="script.js" defer data-deferred="1";
-    document.getelementbyId("priya").onclick=function(){
-        alert("This is a trial website!!");
-    }
+     function showPopup() {
+            alert("Your email has been recorded.");
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("emailInput").addEventListener("keypress", function(event) {
+                if (event.key === "Enter") {
+                    event.preventDefault(); // Form submission ko rokna
+                    showPopup(); // Popup dikhana
+                }
+            });
+        });
      </script> </body>
 </html>
