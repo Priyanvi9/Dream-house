@@ -189,14 +189,16 @@
                         </div>
                     </div>
                 </footer>
+        <form action="/action_page.php">
+  <label for="phone">Enter a phone number:</label><br><br>
+  <input type="tel" id="phone" name="phone" placeholder="123-45-678"
+  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+  <small>Format: 123-45-678</small><br><br>
+  <input type="submit">
+</form> 
 
-     <script src="script.js" defer data-deferred="1">
-         menuIcon.addEventListener("click", () => {
-    navbar.classList.toggle("change")
-})
-document.getElementById("priya").onclick=function(){
-    alert("Your email has been submitted imaginary because this is only a trial project,Thank you!!.");
-}
+
+     <script src="script.js" defer data-deferred="1"
 
      </script> </body>
 </html>
