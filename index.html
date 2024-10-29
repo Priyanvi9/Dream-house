@@ -172,9 +172,14 @@
                     <h1>Stay tuned and get the latest updates</h1>
                 </div>
                 <div class="contact-right">
-<!--                     <input type="email" id="emailInput" placeholder="abcetoz1@gmail.com" required> -->
-                            <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+                     <form id="emailForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
         <button type="submit">Submit</button>
+    </form>
+<!--                     <input type="email" id="emailInput" placeholder="abcetoz1@gmail.com" required> -->
+<!--                             <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+        <button type="submit">Submit</button> -->
                     
 
 <!--                     <i id="plane" class="fa-solid fa-paper-plane"></i> -->
@@ -198,11 +203,11 @@
                     </div>
                 </footer>
          <script src="script.js" defer data-deferred="1">
-               document.getElementById('emailInput').addEventListener('submit', function(event) {
+               document.getElementById('email').addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent the form from submitting
-            const email = document.getElementById('emailInput').value;
+            const email = document.getElementById('email').value;
             alert(`Thank you for submitting your email: ${email}`);
-            document.getElementById('emailInput').value = ''; // Clear the input field
+            document.getElementById('email').value = ''; // Clear the input field
         });
          </script>
         
